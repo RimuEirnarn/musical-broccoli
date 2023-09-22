@@ -1,0 +1,15 @@
+---
+layout: default
+title: Musical Brocolli
+permalink: /
+---
+
+<p>Hello! This is RimuEirnarn. Welcome to Musical Brocolli.</p>
+
+<p>If you want some curated list of posts, here.</p>
+
+<ul>
+{% for page in site.posts %}
+  <li><a href="{{ page.url | relative_url }}">{{ page.title }}</a></li>
+{% endfor %}
+</ul>

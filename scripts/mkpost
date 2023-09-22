@@ -1,0 +1,17 @@
+#!/bin/bash
+
+TIMED="$(date +'%Y-%m-%d')"
+
+if [ "$1" = "" ]; then
+    printf "Enter post name (lowercase, use - i.e, hello-world): "
+    read TITLE
+else
+    TITLE="$1"
+fi
+
+
+FILE="_posts/$TIMED-$TITLE.md"
+
+cp templates/post.md "$FILE"
+
+$EDITOR "$FILE"
