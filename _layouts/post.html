@@ -16,9 +16,9 @@ layout: default
 </div>
 
 {% if page.tags %}
-<small class='tags'>Tags:
+<div class='tags'>Tags:
 {% for tag in page.tags %}
 <span class='badge-tag'><img src="{{ '/assets/svg/tags.svg' | relative_url }}" /> {{ tag }}</span>
 {% endfor %}
-</small>
+</div>
 {% endif %}

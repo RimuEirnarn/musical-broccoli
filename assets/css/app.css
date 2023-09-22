@@ -26,6 +26,8 @@ body {
     border: 1px dashed #b5e853;
     width: max-content;
     font-size: 14px;
+    max-width: 90%;
+    word-wrap: break-word;
 }
 
 main {
@@ -75,4 +77,5 @@ main.section {
     opacity: 0.8;
     pointer-events: none;
     user-select: none;
+    font-size: small;
 }
